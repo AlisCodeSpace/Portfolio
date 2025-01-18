@@ -6,15 +6,24 @@ export default {
       colors: {
         yellow: "hsl(45, 100%, 72%)",
         gold: "hsl(45, 54%, 58%)",
+        "light-gray": "hsla(0, 0%, 84%, 0.7)",
         smoke: "hsl(0, 0%, 7%)",
         jet: "hsl(0, 0%, 22%)",
         onyx: "hsl(240, 1%, 17%)",
-        eerieblack: "hsl(240, 2%, 13%)",
+        eerieblack: "hsl(240, 2%, 12%)",
       },
-      backgroundColor: {},
+      backgroundColor: {
+        "gradient-onyx":
+          "linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%)",
+        "gradient-yellow":
+          "linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%))",
+      },
       borderColor: {
         "gradient-onyx":
           "linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%)",
+      },
+      boxShadow: {
+        dark: "-4px 8px 24px hsla(0, 0%, 0%, 0.125)",
       },
     },
   },

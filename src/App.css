@@ -6,3 +6,24 @@
 body {
     @apply m-0 p-0 bg-smoke;
 }
+
+.container {
+    @apply bg-eerieblack flex flex-col items-center justify-center border border-jet rounded-2xl shadow-dark p-6 overflow-hidden min-h-[80vh];
+}
+
+.h1 {
+    @apply text-white relative font-medium text-3xl pb-4 w-full after:w-[40px] after:h-[5px] after:content-[""] after:absolute after:bottom-0 after:left-0 after:rounded-2xl;
+}
+
+.h2 {
+    @apply text-white font-medium text-2xl
+}
+
+.weird-bg {
+    background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%)
+}
+
+.h1::after {
+    background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+}
+
