@@ -7,23 +7,42 @@ body {
     @apply m-0 p-0 bg-smoke;
 }
 
-.container {
+.wrapper {
     @apply bg-eerieblack flex flex-col items-center justify-center border border-jet rounded-2xl shadow-dark p-6 overflow-hidden min-h-[80vh];
 }
 
-.h1 {
-    @apply text-white relative font-medium text-3xl pb-4 w-full after:w-[40px] after:h-[5px] after:content-[""] after:absolute after:bottom-0 after:left-0 after:rounded-2xl;
+.page {
+    @apply w-full my-6 flex flex-col gap-6;
+}
+
+.page-title {
+    @apply text-white relative font-medium text-[32px] pb-4 w-full after:w-[40px] after:h-[5px] after:content-[""] after:absolute after:bottom-0 after:left-0 after:rounded-2xl;
 }
 
 .h2 {
-    @apply text-white font-medium text-2xl
+    @apply text-white font-medium text-[26px]
 }
 
-.weird-bg {
+.h3 {
+    @apply text-white font-medium text-[24px]
+}
+
+.h4 {
+    @apply text-white font-medium text-[16px]
+}
+
+.container {
+    @apply relative z-10 flex items-center justify-center overflow-hidden shadow-dark rounded-xl ;
     background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%)
 }
 
-.h1::after {
+.container::before {
+    @apply content-[""] absolute inset-[1px] -z-10 rounded-xl;
+    background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+}
+
+
+.page-title::after {
     background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
 }
 

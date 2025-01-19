@@ -10,7 +10,7 @@ const Navbar = () => {
         {links.map((link, index) => (
             <li key={index}>
                 <NavLink to={link.path} className={({isActive}) => `${isActive ? 'text-yellow' : 'text-white'} text-sm transition ease-in-out duration-200 hover:text-light-gray`}>
-                    {link.title}
+                    {link.navTitle}
                 </NavLink>
             </li>
         ))}

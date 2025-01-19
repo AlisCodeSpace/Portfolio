@@ -1,18 +1,22 @@
 export const links = [
   {
-    title: "About",
+    navTitle: "About",
     path: "/about",
+    pageTitle: "About Me",
   },
   {
-    title: "Resume",
+    navTitle: "Resume",
     path: "/resume",
+    pageTitle: "Resume",
   },
   {
-    title: "Portfolio",
+    navTitle: "Portfolio",
     path: "/portfolio",
+    pageTitle: "Portfolio",
   },
   {
-    title: "Contact",
+    navTitle: "Contact",
     path: "/contact",
+    pageTitle: "Contact",
   },
 ];
