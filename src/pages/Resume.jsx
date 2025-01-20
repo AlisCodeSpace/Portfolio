@@ -1,9 +1,10 @@
 import React from 'react'
+import WorkTimeline from '../components/resume/WorkTimeline'
 
 const Resume = () => {
   return (
-    <div>
-      
+    <div className='page'>
+      <WorkTimeline />
     </div>
   )
 }
